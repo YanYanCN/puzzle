@@ -52,3 +52,15 @@ body{
 	margin-left: 100px;
 	margin-top: -25px;
 }
+#header{
+	display: flex;
+	flex-direction: row;
+}
+#hideArea{
+	position: absolute;
+	z-index: 99;
+	width:100%;
+	height:100%;
+	background-color: darkgray;
+	opacity: 0.5;
+}

@@ -7,60 +7,40 @@
 		<link rel="stylesheet" type="text/css" href="puzzle.css">
 		<script type="text/javascript" src="puzzle.js"></script>
 	</head>
-	<body onload="funcLoad()">
-		<table>
-			<tr>
-				<td>
-					<div id="preview"><img id='imgSide' src='' />
-						<div id="clock">
-							<p style="font-size: 30px;">Timer:</p>
-							<table>
-								<tr>
-									<td>
-										<p id="timer" style="font-size: 30px;">0</p>
-									</td>
-									<td>
-										<p style="font-size: 30px;">s</p>
-									</td>
-									<td>
-										<div style="padding-left: 50px; display: inline-block;">
-											<button id="stop">stop</button>
-											<button id="resume">resume</button>
-										</div>
-									</td>
-								</tr>
-							</table>
-						</div>
-						<li style="margin-left:-300px">Tips:if it seems tough,try to doubleClick on these rectangles</li>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<div id="forinput">
-						<div id="clickField">
-							<input type="file" id="upload">
-							<input type="button" id="start" value="PUZZLE!">
-						</div>
-						<div id="rectParam">
-							<div id="hordiv">
-								<label>vertical</label><input type="text" id="hor">
-							</div>
-							<div id="verdiv">
-								<label>horizontal</label><input type="text" id="ver">
-							</div>
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<div id="mainpuzzle">
-						<div id="imgInside"></div>
-					</div>
-				</td>
-			</tr>
-		</table>
 
+	<body onload="funcLoad()">
+		<div id="header">
+			<div id="preview"><img id='imgSide' src='' /></div>
+			<div id="clock">
+				<li>Tips:if it seems tough,try to doubleClick on these rectangles</li>
+				<div style="display: flex;">
+				<p style="font-size: 30px;">Timer:</p>
+				<p id="timer" style="padding-left: 10px; font-size: 30px;">0</p>
+				<p style="font-size: 30px;">s</p>
+				<div style="padding-left: 50px; margin-top: 35px; display: inline-block;">
+					<button id="stop">stop</button>
+					<button id="resume">resume</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div id="forinput">
+			<div id="clickField">
+				<input type="file" id="upload">
+				<input type="button" id="start" value="PUZZLE!">
+			</div>
+			<div id="rectParam">
+				<div id="hordiv">
+					<label>vertical</label><input type="text" id="hor">
+				</div>
+				<div id="verdiv">
+					<label>horizontal</label><input type="text" id="ver">
+				</div>
+			</div>
+		</div>
+		<div id="mainpuzzle">
+			<div id="imgInside"></div>
+		</div>
 	</body>
+
 </html>

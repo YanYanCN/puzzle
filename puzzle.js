@@ -72,13 +72,20 @@ function funcLoad() {
 		window.clearInterval(count);
 	    count = setInterval("counter()",1000);
 	};
+	var hideArea = document.createElement("div");
 	document.getElementById("stop").onclick = function() {
 		window.clearInterval(count);
+		hideArea.setAttribute("id","hideArea");
+		mainpuzzle.appendChild(hideArea);
+		enabledItems();
 	}
     timer = document.getElementById("timer");
 	document.getElementById("resume").onclick = function() {
 		if (timer.innerHTML != "0") {
 		window.clearInterval(count);
+		horArea.setAttribute("disabled","disabled");
+		verArea.setAttribute("disabled","disabled");
+		mainpuzzle.removeChild(hideArea);
 		count = setInterval("counter()",1000);
 		}
 	}
