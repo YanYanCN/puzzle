@@ -1,0 +1,54 @@
+#imgSide{
+  width:320px;
+  height:180px;
+  border:solid 1px darkblue;
+}
+#start{
+	border: 2px solid darkblue;
+}
+#upload{
+  width:320px;
+  border:1px solid black;
+  text-overflow: ellipsis;
+}
+#mainpuzzle{
+  margin-top:5px;
+  width:835px;
+  height:470px;
+  border:solid 1px darkblue;
+  position:relative;
+}
+#rectParam{
+  display:inline-flex;
+  margin-left:15px;
+}
+#verdiv{
+  margin-left:5px;
+}
+#forinput{
+	white-space:nowrap;
+	display:inline-flex;
+	width:835px;
+}
+#clickField{
+	width:389px;
+}
+#hordiv{
+	width:50%;
+}
+#verdiv{
+	width:50%;
+}
+body{
+	background-color: rgba(186, 186, 186, 0.69);
+}
+#preview{
+	display: inline-flex;
+}
+#clock{
+	margin-left: 50px;
+}
+#clock table{
+	margin-left: 100px;
+	margin-top: -25px;
+}
